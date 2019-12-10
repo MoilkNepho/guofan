@@ -35,7 +35,7 @@ function cp_html(){
     e=$2
     for x in $(seq -f "%04g" $s $e)
     do
-        cp html_db/part${x}* text/
+        cp html_db/part${x}[^0-9]* text/
     done
 }
 
